@@ -1,14 +1,9 @@
-#def add (*args):
-#   total = 0 
-#    for arg in args:
-#        total += arg
-#    return total
-#print(add(1,2))
+import example
 
-def display_name(*args):
-    for arg in args:
-        print(arg, end= " ")
+result = example.pi
+result = example.square(3)
+result = example.cube(3)
+result = example.circumference(3)
+result = example.area(3)
 
-display_name("Software Engineer", "Donita Rose", "D." , "Seguerra")
-
-
+print(result)
