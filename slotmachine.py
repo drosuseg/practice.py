@@ -29,8 +29,6 @@ def get_payout(row,bet):
        return bet * 8
    return 0
 
-is_running = True 
-
 def main():
     balance = 100
 
@@ -49,7 +47,7 @@ def main():
 
      bet = int(bet)
 
-     if bet >= balance:
+     if bet >  balance:
         print("Insufficient funds")
         continue
      
@@ -69,6 +67,10 @@ def main():
       print("Sorry, you lost this round")
         
      balance += payout
+    
+     if balance <= 0:
+        print("You're out of balance! Game over.")
+        break
 
      while True: 
         play_again = input("Do you want to play again (Y/N): ").strip().upper()
@@ -80,8 +82,6 @@ def main():
             return
         else:
             print("Invalid input. Please enter Y or N.")
-
-print("\nGame over! Your final balance is: {balance}.")
 
 if __name__ == '__main__':
  main()
