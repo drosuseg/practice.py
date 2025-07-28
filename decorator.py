@@ -1,6 +1,6 @@
 #added function
 def add_sprinkles (func):
-    #must add the args/kwarggs to accept any number of arguments or keyword (Added in the base is the "flavor")
+    #must add the *args/**kwarggs to accept any number of arguments or keyword (Added in the base is the "flavor")
     def wrapper(*args, **kwarggs):
         print("*You add sprinkles 🎆*")
         func(*args, **kwarggs)
