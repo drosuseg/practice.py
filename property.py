@@ -1,3 +1,4 @@
+#property decorator
 class Rectangle:
     def __init__(self, width , height):
         self._width = width
