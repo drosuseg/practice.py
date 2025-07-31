@@ -1,4 +1,4 @@
-#checkbox gui
+#Checkbox gui
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLineEdit, QPushButton
 from PyQt5.QtCore import Qt
